@@ -134,7 +134,7 @@
       statusEl.textContent = 'Sending...';
       const formData = Object.fromEntries(new FormData(contactForm).entries());
       try {
-        const res = await fetch('RENDER_BACKEND_BASE_URL/contact', {
+        const res = await fetch('https://sammy-egfh.onrender.com', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData)
@@ -148,3 +148,4 @@
         statusEl.textContent = 'Error: ' + err.message;
       }
     });
+
