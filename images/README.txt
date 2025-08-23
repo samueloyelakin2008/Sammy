@@ -1,1 +1,0 @@
-Place your images here: samuel-profile.jpg, samuel-working.jpg
