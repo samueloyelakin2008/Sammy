@@ -86,4 +86,30 @@ body {
   opacity: 1;
   transform: translate(0) scale(1);
 }
+#profilePhoto {
+  transition: transform 0.3s ease;
+}
+#profilePhoto:hover {
+  transform: scale(1.05);
+}
+#projectGrid a ,#projectGrid button {
+  transition: transform 0.3s ease;
+}
+#projectGrid a:hover ,#projectGrid button:hover {
+  transform: translateY(-5px);
+}
+article{
+  transition:transform 1s ease-in-out;
+}
+article:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+#techtack, #frontendStack, #backendStack, #dataStack, #toolingStack {
+  transition: transform 0.3s ease;
+
+}
+#techStack:hover, #frontendStack:hover, #backendStack:hover, #dataStack:hover, #toolingStack:hover {
+  transform:translateY(-18px);
+}
 
