@@ -98,7 +98,7 @@ function renderProjects(filter = '') {
         <div class="mt-4 flex flex-wrap gap-3">
           <button data-demo="${p.demo}" data-title="${p.title}" data-desc="${p.desc}" class="open-demo px-3 py-1.5 rounded-xl bg-blue-500 hover:bg-blue-600 text-sm font-semibold">Live demo</button>
           <a target="_blank" href="${p.code}" class="px-3 py-1.5 rounded-xl border border-white/10 hover:bg-white/5 text-sm">View code</a>
-          <a target="_blank" href="${p.visit}" class="px-3 py-1.5 bg-green-500 rounded-xl border border-white/10 hover:bg-green-600 text-sm">Visit Web</a>
+          <a target="_blank" href="${p.visit}" class="px-3 py-1.5 border-white-500 rounded-xl border border-white/10 hover:border-lightblue-600 text-sm">Visit Web</a>
         </div>
       </div>`;
     grid.appendChild(card);
