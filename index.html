@@ -18,7 +18,7 @@
 </head>
 <body class="bg-[rgb(var(--bg))] text-white selection:bg-blue-500/30">
   <!-- Header -->
-  <header class="sticky top-0 z-50 border-b border-white/5 bg-[rgb(var(--bg))]/70 backdrop-blur">
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-[rgb(var(--bg))]/70 backdrop-blur" >
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
       <a href="#home" class="font-extrabold tracking-tight text-lg">Oyelakin <span class="text-blue-400">Samuel</span> Adeoye</a>
       <nav class="hidden md:flex items-center gap-6 text-sm text-zinc-300">
@@ -57,9 +57,16 @@
           <span class="inline-flex h-2 w-2 rounded-full bg-green-400"></span>
           Available for freelance & roles
         </div>
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
-          Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">Oyelakin Samuel Adeoye</span>
-        </h1>
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+       <span style="display: flex; align-items: center;">
+        Hi 
+       <img src="images/waving-hand-svgrepo-com.svg" height="80px" width="80px" style="margin-left: 8px;">
+       </span> I'm 
+       <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">
+       Oyelakin Samuel Adeoye
+      </span>
+      </h1>
+
         <p class="mt-4 text-zinc-300 text-lg max-w-xl">A Developer crafting fast, accessible experiences with <strong>HTML/CSS/JS</strong>, <strong>Tailwind</strong>, <strong>Node.js</strong>, <strong>Express</strong>, <strong>MongoDB</strong> and integrations like Google Apps Script.</p>
         <div class="mt-6 flex flex-wrap gap-3">
           <a href="#projects" class="px-5 py-3 rounded-2xl bg-blue-500 hover:bg-blue-600 font-semibold">See my work</a>
@@ -135,11 +142,11 @@
   </section>
 
   <!-- Tech Stack -->
-  <section id="stack" class="py-20 border-t border-white/5">
+  <section  class="py-20 border-t border-white/5">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl md:text-4xl font-extrabold mb-8">Tech stack</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div class="glass rounded-2xl p-5">
+        <div class="glass rounded-2xl p-5" id="techStack">
           <h3 class="font-semibold mb-2">Frontend</h3>
           <div class="flex flex-wrap gap-2 text-sm text-zinc-300">
             <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">HTML5</span>
@@ -148,7 +155,7 @@
             <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">Tailwind CSS</span>
           </div>
         </div>
-        <div class="glass rounded-2xl p-5">
+        <div class="glass rounded-2xl p-5" id="backendStack">
           <h3 class="font-semibold mb-2">Backend</h3>
           <div class="flex flex-wrap gap-2 text-sm text-zinc-300">
             <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">Node.js</span>
@@ -156,7 +163,7 @@
             <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">REST APIs</span>
           </div>
         </div>
-        <div class="glass rounded-2xl p-5">
+        <div class="glass rounded-2xl p-5" id="dataStack">
           <h3 class="font-semibold mb-2">Data</h3>
           <div class="flex flex-wrap gap-2 text-sm text-zinc-300">
             <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">MongoDB</span>
@@ -164,7 +171,7 @@
             <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">Google Sheets</span>
           </div>
         </div>
-        <div class="glass rounded-2xl p-5">
+        <div class="glass rounded-2xl p-5" id="toolingStack">
           <h3 class="font-semibold mb-2">Tooling</h3>
           <div class="flex flex-wrap gap-2 text-sm text-zinc-300">
             <span class="px-3 py-1 rounded-full bg-white/10 border border-white/10">Git & GitHub</span>
